@@ -1,11 +1,17 @@
 .navbar {
     color: white;
+    font-family: var(--main-font);
     width: 100%;
     font-size: 14px;
     position: fixed;
     top: 0;
     z-index: 999;
     background: linear-gradient(to top, transparent 0% rgb(0,0,0,0.5) 0%);
+
+    &.scrolled{
+        background-color: var(--main-color);
+    }    
+
     .container {
         padding: 0 50px;
         display: flex;
@@ -62,6 +68,7 @@
                     span {
                         padding: 10px;
                         cursor: pointer;
+
                     }
                 }
             }
